@@ -1,8 +1,9 @@
+
 # Resumé/Portfolio - Jonnathan Riquelmo
 
 Este repositório contém o código-fonte para o meu site pessoal, que funciona como um resumé e portfólio de projetos. O site foi desenvolvido com uma arquitetura simples e eficiente, utilizando HTML, CSS, JavaScript e JSON. A ideia é criar uma página única que seja facilmente acessível, bem organizada e, ao mesmo tempo, profissional.
 
-## Arquitetura e Estrutura
+## Arquitetura e Estrutura 🎨
 
 O design do site foi baseado em uma abordagem moderna, que separa dados, lógica e apresentação, garantindo manutenibilidade e escalabilidade no longo prazo. Aqui estão os principais pontos dessa arquitetura:
 
@@ -10,14 +11,14 @@ O design do site foi baseado em uma abordagem moderna, que separa dados, lógica
 - **Separação de Responsabilidades**: O modelo de dados (JSON) está totalmente separado da lógica (JavaScript) e da apresentação (HTML/CSS). Isso torna o código mais organizado e de fácil manutenção.
 - **Escalabilidade**: A estrutura é flexível, permitindo que novos campos ou seções possam ser adicionados sem grandes alterações no código.
 
-## Implementação Técnica
+## Implementação Técnica ✨
 
 - **HTML**: A estrutura do site é limpa e semântica, com seções bem definidas para informações pessoais, projetos, educação, experiência profissional e links sociais.
 - **JavaScript**: O código JavaScript é modular e eficiente, responsável por carregar os dados do arquivo JSON e manipular a DOM para exibição dinâmica.
 - **CSS**: O design é moderno e responsivo, garantindo que o site funcione bem em diferentes dispositivos e tamanhos de tela. Variáveis CSS são usadas para facilitar ajustes de estilo.
 - **JSON**: O arquivo JSON organiza todos os dados de forma simples e flexível. Ele é usado para armazenar as informações apresentadas na página, tornando o conteúdo facilmente atualizável.
 
-## Pontos Fortes
+## Pontos Fortes 🏆
 
 Aqui estão os principais benefícios desse projeto:
 
@@ -27,7 +28,7 @@ Aqui estão os principais benefícios desse projeto:
 4. **Acessibilidade**: A estrutura semântica do HTML facilita o uso de leitores de tela e garante uma boa experiência para pessoas com deficiência.
 5. **Visual Moderno**: O design é minimalista, mas profissional, com ênfase em clareza e organização.
 
-## Possíveis Melhorias
+## Possíveis Melhorias 🚀
 
 Embora o site já esteja em uma boa forma, há algumas melhorias que podem ser feitas no futuro:
 
@@ -35,7 +36,7 @@ Embora o site já esteja em uma boa forma, há algumas melhorias que podem ser f
 2. **Validação de Dados**: Adicionar validação de esquema para o JSON pode garantir que os dados sejam bem formados e evitar erros na exibição.
 3. **Loading States**: Implementar estados de carregamento (loading states) para dar um feedback visual ao usuário enquanto os dados estão sendo carregados.
 
-## Arquitetura do Site
+## Arquitetura do Site 🏗️
 
 O site segue a arquitetura **JAMstack** (JavaScript, APIs e Markup), com a seguinte implementação:
 
@@ -49,7 +50,7 @@ Além disso, a estrutura do site segue o padrão **MVC** (Model-View-Controller)
 - **View**: O arquivo `index.html` apresenta os dados e o `styles.css` garante que o layout seja atraente e responsivo.
 - **Controller**: O arquivo `script.js` é responsável pela lógica do site, carregando os dados e manipulando a DOM.
 
-## Como Usar
+## Como Usar 🖥️
 
 1. **Clone o Repositório**:
    ```bash
@@ -63,7 +64,7 @@ Além disso, a estrutura do site segue o padrão **MVC** (Model-View-Controller)
 4. **Personalize o design**:
    O design é controlado pelo arquivo `styles.css`. Faça ajustes nas variáveis CSS para mudar cores, fontes ou layout conforme desejar.
 
-## Conclusão
+## Conclusão 💬
 
 Este projeto foi desenvolvido com foco em simplicidade, flexibilidade e manutenibilidade. A escolha de uma arquitetura estática com uso de JSON facilita a atualização do conteúdo e garante uma experiência rápida e fluida para o usuário. A separação de responsabilidades entre os dados, a lógica e a apresentação torna o código mais organizado e escalável.
 
