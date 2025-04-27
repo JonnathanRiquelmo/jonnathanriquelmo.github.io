@@ -1,0 +1,114 @@
+{
+    "nome": "Jonnathan Riquelmo",
+    "titulo": "Engenheiro de Software",
+    "descricao": "Desenvolvedor | Pesquisador | RPGista de Mesa",
+    "links_sociais": {
+        "linkedin": "https://www.linkedin.com/in/jonnathanriquelmo",
+        "lattes": "https://lattes.cnpq.br/7479721014622709",
+        "github": "https://github.com/JonnathanRiquelmo",
+        "email": "mailto:jonnathan.riquelmo@gmail.com",
+        "lastFm": "https://www.last.fm/user/jhon_in_flames"
+    },
+    "sobre_mim": "Trabalho na TI do Banrisul focado em projetos de ferramentas de controle de qualidade e automação de testes web/mobile. Possuo experiência acadêmica, habilidades diversas em desenvolvimento de software e busco por aprendizado contínuo. E não, eu não sou Designer, Front-end ninja nem mago do Figma, mas se precisar, a gente dá um jeito.",
+    "experiencias_profissionais": [
+        {
+            "cargo": "Engenheiro de Software",
+            "periodo": "2023 - atual",
+            "empresa": "Banco do Estado do Rio Grande do Sul S.A.",
+            "descricao": [
+                "Unidade de Desenvolvimento de Sistemas (UDS), time de Qualidade de Software.",
+                "Modelagem, arquitetura, desenvolvimento, testes e manutenção de sistemas.",
+                "Tecnologias Principais: Java, C#, JavaScript, Selenium, Appium, Jenkins, GitLab, DB2, Oracle Database."
+            ]
+        },
+        {
+            "cargo": "Pesquisador Voluntário",
+            "periodo": "2017 - atual",
+            "empresa": "Universidade Federal do Pampa",
+            "descricao": [
+                "Pesquisa em DSLs, modelagem de bancos de dados e geração automatizada de scripts de teste."
+            ]
+        },
+        {
+            "cargo": "Web Developer",
+            "periodo": "2019",
+            "empresa": "Universidade Federal do Pampa",
+            "descricao": [
+                "Desenvolvimento de módulo para reservas no sistema GURI (Gestão Unificada de Recursos Institucionais) com integração ao Google Calendar."
+            ]
+        },
+        {
+            "cargo": "Full Stack Android Developer",
+            "periodo": "2017",
+            "empresa": "Universidade Federal do Pampa",
+            "descricao": [
+                "Aplicativo Android para Pedido de Providência (PP) disponibilizado à população, e API em PHP para a prefeitura de Alegrete-RS."
+            ]
+        }
+    ],
+    "formacao_academica": [
+        {
+            "curso": "Mestrado em Engenharia de Software",
+            "periodo": "2020 - 2022",
+            "instituicao": "Universidade Federal do Pampa",
+            "descricao": "Ferramenta para modelagem de bancos de dados relacionais."
+        },
+        {
+            "curso": "Bacharelado em Engenharia de Software",
+            "periodo": "2015 - 2019",
+            "instituicao": "Universidade Federal do Pampa",
+            "descricao": "Gramática para DSL de modelagem conceitual de bancos de dados relacionais."
+        },
+        {
+            "curso": "Bacharelado em Sistemas de Informação",
+            "periodo": "2011 - 2014",
+            "instituicao": "Universidade da Região da Campanha",
+            "descricao": "Criação de sistema de cadastro habitacional e triagem, integrado ao \"Minha Casa, Minha Vida\", e aplicado no âmbito municipal de Sant'Ana do Livramento."
+        }
+    ],
+    "habilidades_tecnicas": [
+        "Java",
+        "Selenium",
+        "Appium",
+        "C#",
+        "JavaScript",
+        "jQuery",
+        "DSLs",
+        "Xtext",
+        "DB2",
+        "Oracle Database",
+        "Eclipse",
+        "Git",
+        "GitHub",
+        "Gitlab",
+        "Postman",
+        "Visual Studio",
+        "Android Studio",
+        "Modelagem de Bancos de Dados",
+        "Geração de Scripts de Teste"
+    ],
+    "projetos": [
+        {
+            "nome": "DSL de Modelagem Relacional",
+            "link": "https://github.com/ProjetoDSL/ERDSL"
+        },
+        
+        {
+            "nome": "Rock, Paper, Scissors, Lizard, Spock",
+            "link": "https://jonnathanriquelmo.github.io/rock-paper-scissors-lizard-spock/"
+        },
+        {
+            "nome": "NASA Open APIs - APOD",
+            "link": "https://jonnathanriquelmo.github.io/nasa-api-apod/"
+        },
+        {
+            "nome": "Picture Wall",
+            "link": "https://jonnathanriquelmo.github.io/infinite-scroll/"
+        }
+    ],
+    "contato": {
+        "whatsapp": "+55 (55) 99126-4141",
+        "email": "jonnathan.riquelmo@gmail.com",
+        "localizacao": "Porto Alegre, Rio Grande do Sul - Brasil"
+    }
+}
