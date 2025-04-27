@@ -50,7 +50,8 @@ function populateContent(data) {
         github: 'fab fa-github',
         lattes: 'fas fa-graduation-cap',
         email: 'fas fa-envelope',
-        lastFm: 'fab fa-lastfm'
+        lastFm: 'fab fa-lastfm',
+        instagram: 'fab fa-instagram'
     };
     Object.entries(data.links_sociais).forEach(([platform, url]) => {
         const link = document.createElement('a');
