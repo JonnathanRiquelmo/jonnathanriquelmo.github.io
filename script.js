@@ -152,6 +152,21 @@ function initThemeToggle() {
     // Check for saved theme preference or default to dark mode
     const savedTheme = localStorage.getItem('theme') || 'dark';
     
+    // Hide theme toggle on scroll for mobile devices
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) {
+            themeToggle.style.opacity = '0';
+            themeToggle.style.pointerEvents = 'none';
+            
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                themeToggle.style.opacity = '1';
+                themeToggle.style.pointerEvents = 'auto';
+            }, 1500);
+        }
+    });
+    
     // Apply saved theme
     if (savedTheme === 'light') {
         body.setAttribute('data-theme', 'light');
