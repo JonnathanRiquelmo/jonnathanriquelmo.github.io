@@ -38,10 +38,10 @@ function updateDateTime() {
 // Preenche o conteúdo na página
 function populateContent(data) {
     // Informações básicas
-    document.getElementById('nome').textContent = data.nome;
-    document.getElementById('titulo').textContent = data.titulo;
-    document.getElementById('descricao').textContent = data.descricao;
-    document.getElementById('sobre-mim').textContent = data.sobre_mim;
+    document.getElementById('nome').textContent = data.name;
+    document.getElementById('titulo').textContent = data.title;
+    document.getElementById('descricao').textContent = data.description;
+    document.getElementById('sobre-mim').textContent = data.about_me;
 
     // Links sociais
     const socialsContainer = document.getElementById('links-sociais');
@@ -53,7 +53,7 @@ function populateContent(data) {
         lastFm: 'fab fa-lastfm',
         instagram: 'fab fa-instagram'
     };
-    Object.entries(data.links_sociais).forEach(([platform, url]) => {
+    Object.entries(data.social_links).forEach(([platform, url]) => {
         const link = document.createElement('a');
         link.href = url.trim();
         link.target = '_blank';
@@ -65,14 +65,14 @@ function populateContent(data) {
 
     // Experiências profissionais
     const expContainer = document.getElementById('experiencias-profissionais');
-    data.experiencias_profissionais.forEach(exp => {
+    data.professional_experience.forEach(exp => {
         const expElement = document.createElement('div');
         expElement.className = 'experience-item';
         expElement.innerHTML = `
-            <h3>${exp.cargo}</h3>
-            <p class="period">${exp.periodo} - ${exp.empresa}</p>
+            <h3>${exp.position}</h3>
+            <p class="period">${exp.period} - ${exp.company}</p>
             <ul>
-                ${exp.descricao.map(desc => `<li>${desc}</li>`).join('')}
+                ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
             </ul>
         `;
         expContainer.appendChild(expElement);
@@ -81,25 +81,25 @@ function populateContent(data) {
     // Formação acadêmica
     const educContainer = document.getElementById('formacao-academica');
     const diplomaMap = {
-        'Mestrado em Engenharia de Software': 'assets/Mestrado-frente-edit.pdf',
-        'Bacharelado em Engenharia de Software': 'assets/ES-frente-edit.pdf',
-        'Bacharelado em Sistemas de Informação': 'assets/SI-frente-edit.pdf'
+        'Master\'s in Software Engineering': 'assets/Mestrado-frente-edit.pdf',
+        'Bachelor\'s in Software Engineering': 'assets/ES-frente-edit.pdf',
+        'Bachelor\'s in Information Systems': 'assets/SI-frente-edit.pdf'
     };
-    data.formacao_academica.forEach(edu => {
+    data.academic_background.forEach(edu => {
         const eduElement = document.createElement('div');
         eduElement.className = 'education-item';
-        const diplomaLink = diplomaMap[edu.curso] ? `<a href="${diplomaMap[edu.curso]}" target="_blank" class="diploma-link" title="Visualizar Diploma"><i class="fas fa-file-pdf"></i></a>` : '';
+        const diplomaLink = diplomaMap[edu.course] ? `<a href="${diplomaMap[edu.course]}" target="_blank" class="diploma-link" title="Visualizar Diploma"><i class="fas fa-file-pdf"></i></a>` : '';
         eduElement.innerHTML = `
-            <h3>${diplomaLink} ${edu.curso}</h3>
-            <p class="period">${edu.periodo} - ${edu.instituicao}</p>
-            <p>${edu.descricao}</p>
+            <h3>${diplomaLink} ${edu.course}</h3>
+            <p class="period">${edu.period} - ${edu.institution}</p>
+            <p>${edu.description}</p>
         `;
         educContainer.appendChild(eduElement);
     });
 
     // Habilidades técnicas
     const skillsContainer = document.getElementById('habilidades-tecnicas');
-    data.habilidades_tecnicas.forEach(skill => {
+    data.technical_skills.forEach(skill => {
         const skillElement = document.createElement('span');
         skillElement.className = 'skill-tag';
         skillElement.textContent = skill;
@@ -108,11 +108,11 @@ function populateContent(data) {
 
     // Informações de contato
     const contactContainer = document.getElementById('info-contato');
-    const contato = data.contato;
+    const contato = data.contact;
     contactContainer.innerHTML = `
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/${contato.whatsapp.replace(/[^0-9]/g, '')}">${contato.whatsapp}</a></p>
         <p><strong>E-mail:</strong> <a href="mailto:${contato.email}">${contato.email}</a></p>
-        <p><strong>Location:</strong> ${contato.localizacao}</p>
+        <p><strong>Location:</strong> ${contato.location}</p>
     `;
 }
 

@@ -114,14 +114,43 @@ All content is managed through the `data.json` file:
 
 ```json
 {
-  "personal_info": {
-    "name": "Your Name",
-    "title": "Your Title",
-    "description": "Your Description"
+  "name": "Your Name",
+  "title": "Your Title",
+  "description": "Your Description",
+  "social_links": {
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourusername",
+    "email": "mailto:your.email@example.com"
   },
-  "experience": [...],
-  "education": [...],
-  "skills": [...]
+  "about_me": "Your about me description",
+  "professional_experience": [
+    {
+      "position": "Job Title",
+      "period": "2020 - present",
+      "company": "Company Name",
+      "description": ["Task 1", "Task 2"]
+    }
+  ],
+  "academic_background": [
+    {
+      "course": "Degree Name",
+      "period": "2015 - 2019",
+      "institution": "University Name",
+      "description": "Brief description"
+    }
+  ],
+  "technical_skills": ["JavaScript", "Python", "React"],
+  "projects": [
+    {
+      "name": "Project Name",
+      "link": "https://github.com/project-link"
+    }
+  ],
+  "contact": {
+    "whatsapp": "+1 234 567 8900",
+    "email": "your.email@example.com",
+    "location": "City, Country"
+  }
 }
 ```
 
@@ -225,8 +254,12 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📞 Contact
 
 - **Portfolio**: [jonnathanriquelmo.github.io](https://jonnathanriquelmo.github.io)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **Email**: your.email@example.com
+- **LinkedIn**: [Jonnathan Riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
+- **Email**: jonnathan.riquelmo@gmail.com
+- **WhatsApp**: +55 (55) 99126-4141
+- **Lattes**: [Academic Profile](https://lattes.cnpq.br/7479721014622709)
+- **Last.fm**: [Music Profile](https://www.last.fm/user/jhon_in_flames)
+- **Instagram**: [@u53r.n07.f0und](https://www.instagram.com/u53r.n07.f0und)
 
 ---
 
