@@ -106,26 +106,44 @@ function populateContent(data) {
         skillsContainer.appendChild(skillElement);
     });
 
-    // Projetos
-    const projectsContainer = document.getElementById('lista-projetos');
-    data.projetos.forEach(projeto => {
-        const projetoElement = document.createElement('div');
-        projetoElement.className = 'project-item';
-        projetoElement.innerHTML = `
-            <h3><a href="${projeto.link}" target="_blank">${projeto.nome}</a></h3>
-        `;
-        projectsContainer.appendChild(projetoElement);
-    });
-
     // Informações de contato
     const contactContainer = document.getElementById('info-contato');
     const contato = data.contato;
     contactContainer.innerHTML = `
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/${contato.whatsapp.replace(/[^0-9]/g, '')}">${contato.whatsapp}</a></p>
         <p><strong>E-mail:</strong> <a href="mailto:${contato.email}">${contato.email}</a></p>
-        <p><strong>Localização:</strong> ${contato.localizacao}</p>
+        <p><strong>Location:</strong> ${contato.localizacao}</p>
     `;
 }
 
+// Função para criar partículas animadas
+function createParticles() {
+    const particlesContainer = document.getElementById('particles');
+    const particleCount = 100;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        // Posição inicial aleatória
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        
+        // Tamanho aleatório
+        const size = Math.random() * 3 + 1;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        
+        // Opacidade aleatória
+        particle.style.opacity = Math.random() * 0.6 + 0.2;
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
 // Carrega os dados quando a página é carregada
-document.addEventListener('DOMContentLoaded', loadData);
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    createParticles();
+});

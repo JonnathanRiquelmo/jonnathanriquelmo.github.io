@@ -1,7 +1,7 @@
 {
     "nome": "Jonnathan Riquelmo",
-    "titulo": "Engenheiro de Software",
-    "descricao": "Desenvolvedor | Pesquisador | RPGista de Mesa",
+    "titulo": "Software Engineer",
+    "descricao": "Developer | Researcher | RPG Player",
     "links_sociais": {
         "linkedin": "https://www.linkedin.com/in/jonnathan-riquelmo",
         "lattes": "https://lattes.cnpq.br/7479721014622709",
@@ -10,24 +10,24 @@
         "lastFm": "https://www.last.fm/user/jhon_in_flames",
         "instagram": "https://www.instagram.com/u53r.n07.f0und"
     },
-    "sobre_mim": "Trabalho na TI do Banrisul focado em projetos de ferramentas de controle de qualidade e automação de testes web/mobile. Possuo experiência acadêmica, habilidades diversas em desenvolvimento de software e busco por aprendizado contínuo. E não, eu não sou Designer, Front-end ninja nem mago do Figma, mas se precisar, a gente dá um jeito.",
+    "sobre_mim": "Brazilian with green skin and orange hair (yes, like Blanka ⚡). Technology enthusiast, black coffee lover, and algorithms that challenge logic. I work in Banrisul's IT department focused on quality control tools and web/mobile test automation projects. I have academic experience, diverse software development skills, and seek continuous learning.",
     "experiencias_profissionais": [
         {
-            "cargo": "Engenheiro de Software",
-            "periodo": "2023 - atual",
+            "cargo": "Software Engineer",
+            "periodo": "2023 - present",
             "empresa": "Banco do Estado do Rio Grande do Sul S.A.",
             "descricao": [
-                "Unidade de Desenvolvimento de Sistemas (UDS), time de Qualidade de Software.",
-                "Modelagem, arquitetura, desenvolvimento, testes e manutenção de sistemas.",
-                "Tecnologias Principais: Java, C#, JavaScript, Selenium, Appium, Jenkins, GitLab, DB2, Oracle Database."
+                "Systems Development Unit (UDS), Software Quality team.",
+                "Modeling, architecture, development, testing and maintenance of systems.",
+                "Main Technologies: Java, C#, JavaScript, Selenium, Appium, Jenkins, GitLab, DB2, Oracle Database."
             ]
         },
         {
-            "cargo": "Pesquisador Voluntário",
-            "periodo": "2017 - atual",
+            "cargo": "Volunteer Researcher",
+            "periodo": "2017 - present",
             "empresa": "Universidade Federal do Pampa",
             "descricao": [
-                "Pesquisa em DSLs, modelagem de bancos de dados e geração automatizada de scripts de teste."
+                "Research in DSLs, database modeling and automated test script generation."
             ]
         },
         {
@@ -35,7 +35,7 @@
             "periodo": "2019",
             "empresa": "Universidade Federal do Pampa",
             "descricao": [
-                "Desenvolvimento de módulo para reservas no sistema GURI (Gestão Unificada de Recursos Institucionais) com integração ao Google Calendar."
+                "Development of reservation module for GURI system (Unified Management of Institutional Resources) with Google Calendar integration."
             ]
         },
         {
@@ -43,28 +43,28 @@
             "periodo": "2017",
             "empresa": "Universidade Federal do Pampa",
             "descricao": [
-                "Aplicativo Android para Pedido de Providência (PP) disponibilizado à população, e API em PHP para a prefeitura de Alegrete-RS."
+                "Android application for Provision Request (PP) made available to the population, and PHP API for the municipality of Alegrete-RS."
             ]
         }
     ],
     "formacao_academica": [
         {
-            "curso": "Mestrado em Engenharia de Software",
+            "curso": "Master's in Software Engineering",
             "periodo": "2020 - 2022",
             "instituicao": "Universidade Federal do Pampa",
-            "descricao": "Ferramenta para modelagem de bancos de dados relacionais."
+            "descricao": "Tool for relational database modeling."
         },
         {
-            "curso": "Bacharelado em Engenharia de Software",
+            "curso": "Bachelor's in Software Engineering",
             "periodo": "2015 - 2019",
             "instituicao": "Universidade Federal do Pampa",
-            "descricao": "Gramática para DSL de modelagem conceitual de bancos de dados relacionais."
+            "descricao": "Grammar for DSL of conceptual modeling of relational databases."
         },
         {
-            "curso": "Bacharelado em Sistemas de Informação",
+            "curso": "Bachelor's in Information Systems",
             "periodo": "2011 - 2014",
             "instituicao": "Universidade da Região da Campanha",
-            "descricao": "Criação de sistema de cadastro habitacional e triagem, integrado ao \"Minha Casa, Minha Vida\", e aplicado no âmbito municipal de Sant'Ana do Livramento."
+            "descricao": "Creation of housing registration and screening system, integrated with \"Minha Casa, Minha Vida\", and applied at the municipal level of Sant'Ana do Livramento city."
         }
     ],
     "habilidades_tecnicas": [
@@ -85,15 +85,14 @@
         "Postman",
         "Visual Studio",
         "Android Studio",
-        "Modelagem de Bancos de Dados",
-        "Geração de Scripts de Teste"
+        "Database Modeling",
+        "Test Script Generation"
     ],
     "projetos": [
         {
-            "nome": "DSL de Modelagem Relacional",
+            "nome": "Relational Modeling DSL",
             "link": "https://github.com/ProjetoDSL/ERDSL"
         },
-        
         {
             "nome": "Rock, Paper, Scissors, Lizard, Spock",
             "link": "https://jonnathanriquelmo.github.io/rock-paper-scissors-lizard-spock/"
@@ -110,6 +109,6 @@
     "contato": {
         "whatsapp": "+55 (55) 99126-4141",
         "email": "jonnathan.riquelmo@gmail.com",
-        "localizacao": "Porto Alegre, Rio Grande do Sul - Brasil"
+        "localizacao": "Porto Alegre, Rio Grande do Sul - Brazil"
     }
 }
