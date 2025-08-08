@@ -142,8 +142,50 @@ function createParticles() {
     }
 }
 
+// Theme Toggle Functionality
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const themeText = document.getElementById('theme-text');
+    const body = document.body;
+    
+    // Check for saved theme preference or default to dark mode
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    
+    // Apply saved theme
+    if (savedTheme === 'light') {
+        body.setAttribute('data-theme', 'light');
+        themeIcon.className = 'fas fa-moon';
+        themeText.textContent = 'Dark';
+    } else {
+        body.removeAttribute('data-theme');
+        themeIcon.className = 'fas fa-sun';
+        themeText.textContent = 'Light';
+    }
+    
+    // Theme toggle event listener
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        
+        if (currentTheme === 'light') {
+            // Switch to dark mode
+            body.removeAttribute('data-theme');
+            themeIcon.className = 'fas fa-sun';
+            themeText.textContent = 'Light';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            // Switch to light mode
+            body.setAttribute('data-theme', 'light');
+            themeIcon.className = 'fas fa-moon';
+            themeText.textContent = 'Dark';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
+
 // Carrega os dados quando a página é carregada
 document.addEventListener('DOMContentLoaded', () => {
     loadData();
     createParticles();
+    initThemeToggle();
 });
