@@ -1,269 +1,403 @@
+# 🌟 Personal Portfolio - Jonnathan Riquelmo
 
-# Professional Portfolio & Resume
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://jonnathanriquelmo.github.io)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
-
-> A modern, responsive portfolio website showcasing professional experience, technical skills, and academic background with dynamic theme switching and elegant animations.
-
-## 🚀 Features
-
-- **🎨 Dual Theme Support**: Dark and light mode with smooth transitions
-- **📱 Fully Responsive**: Optimized for all device sizes and screen resolutions
-- **⚡ Performance Optimized**: Fast loading with minimal dependencies
-- **🎭 Interactive Animations**: Smooth hover effects and background animations
-- **🔧 Data-Driven**: JSON-based content management for easy updates
-- **♿ Accessible**: Semantic HTML structure with ARIA compliance
-- **🌐 Multi-language Ready**: Structured for easy localization
-
-## 🏗️ Architecture
-
-This project follows modern web development best practices with a **JAMstack** architecture:
-
-```
-├── 📄 index.html          # Main HTML structure
-├── 🎨 styles.css          # Styling and animations
-├── ⚙️ script.js           # Dynamic functionality
-├── 📊 data.json           # Content data source
-├── 📁 assets/             # Static resources
-│   ├── 📄 *.pdf           # Documents and certificates
-│   └── 🖼️ img/            # Images and icons
-└── 📖 README.md           # Project documentation
-```
-
-### Design Patterns
-
-- **MVC Pattern**: Clear separation of concerns
-  - **Model**: `data.json` - Data layer
-  - **View**: `index.html` + `styles.css` - Presentation layer
-  - **Controller**: `script.js` - Business logic
-
-- **Component-Based Structure**: Modular CSS and JavaScript components
-- **Progressive Enhancement**: Works without JavaScript, enhanced with it
-- **Mobile-First Design**: Responsive breakpoints starting from mobile
-
-## 🛠️ Technical Stack
-
-| Technology | Purpose | Version |
-|------------|---------|----------|
-| HTML5 | Structure & Semantics | Latest |
-| CSS3 | Styling & Animations | Latest |
-| Vanilla JavaScript | Interactivity | ES6+ |
-| JSON | Data Management | - |
-| Font Awesome | Icons | 6.x |
-
-## 🎯 Key Highlights
-
-### Performance
-- ⚡ **Lighthouse Score**: 95+ across all metrics
-- 🚀 **Load Time**: < 2 seconds on 3G
-- 📦 **Bundle Size**: < 100KB total
-- 🔄 **Zero Dependencies**: No external frameworks
-
-### User Experience
-- 🎨 **Smooth Animations**: 60fps CSS animations
-- 📱 **Touch Optimized**: Mobile-friendly interactions
-- 🌙 **Theme Persistence**: Remembers user preference
-- ♿ **WCAG Compliant**: AA accessibility standards
-
-### Developer Experience
-- 🔧 **Easy Maintenance**: JSON-driven content updates
-- 📝 **Clean Code**: Well-documented and organized
-- 🔄 **Version Control**: Git-friendly structure
-- 🚀 **Deploy Ready**: Static hosting compatible
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Modern web browser (Chrome 80+, Firefox 75+, Safari 13+)
-- Local web server (optional, for development)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
-   cd jonnathanriquelmo.github.io
-   ```
-
-2. **Serve locally** (optional)
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
-
-## 📝 Content Management
-
-### Updating Information
-
-All content is managed through the `data.json` file:
-
-```json
-{
-  "name": "Your Name",
-  "title": "Your Title",
-  "description": "Your Description",
-  "social_links": {
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourusername",
-    "email": "mailto:your.email@example.com"
-  },
-  "about_me": "Your about me description",
-  "professional_experience": [
-    {
-      "position": "Job Title",
-      "period": "2020 - present",
-      "company": "Company Name",
-      "description": ["Task 1", "Task 2"]
-    }
-  ],
-  "academic_background": [
-    {
-      "course": "Degree Name",
-      "period": "2015 - 2019",
-      "institution": "University Name",
-      "description": "Brief description"
-    }
-  ],
-  "technical_skills": ["JavaScript", "Python", "React"],
-  "projects": [
-    {
-      "name": "Project Name",
-      "link": "https://github.com/project-link"
-    }
-  ],
-  "contact": {
-    "whatsapp": "+1 234 567 8900",
-    "email": "your.email@example.com",
-    "location": "City, Country"
-  }
-}
-```
-
-### Adding New Sections
-
-1. Update `data.json` with new data structure
-2. Modify `script.js` to handle new data
-3. Add corresponding HTML structure
-4. Style with CSS as needed
-
-## 🎨 Customization
-
-### Theme Colors
-
-Colors are managed through CSS custom properties:
-
-```css
-:root {
-  --primary-color: #0ea5e9;
-  --secondary-color: #1e293b;
-  --accent-color: #00d4ff;
-  /* ... */
-}
-```
-
-### Animations
-
-Customize animations by modifying CSS keyframes:
-
-```css
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-```
-
-## 📱 Browser Support
-
-| Browser | Version | Status |
-|---------|---------|--------|
-| Chrome | 80+ | ✅ Fully Supported |
-| Firefox | 75+ | ✅ Fully Supported |
-| Safari | 13+ | ✅ Fully Supported |
-| Edge | 80+ | ✅ Fully Supported |
-| IE | 11 | ⚠️ Limited Support |
-
-## 🔧 Development
-
-### File Structure
-```
-📁 Project Root
-├── 🌐 Frontend Assets
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── data.json
-├── 📁 Static Resources
-│   └── assets/
-└── 📖 Documentation
-    └── README.md
-```
-
-### Code Quality
-- **ESLint**: JavaScript linting
-- **Prettier**: Code formatting
-- **Semantic HTML**: Proper element usage
-- **CSS BEM**: Block Element Modifier methodology
-
-## 🚀 Deployment
-
-### GitHub Pages (Recommended)
-1. Push to `main` branch
-2. Enable GitHub Pages in repository settings
-3. Site automatically deploys to `https://username.github.io`
-
-### Alternative Hosting
-- **Netlify**: Drag & drop deployment
-- **Vercel**: Git-based deployment
-- **Firebase Hosting**: Google Cloud integration
-- **AWS S3**: Static website hosting
-
-## 🔮 Future Enhancements
-
-- [ ] **PWA Support**: Service worker for offline functionality
-- [ ] **Analytics Integration**: Google Analytics or privacy-focused alternatives
-- [ ] **Contact Form**: Backend integration for contact submissions
-- [ ] **Blog Section**: Markdown-based blog posts
-- [ ] **Multi-language**: i18n support for multiple languages
-- [ ] **CMS Integration**: Headless CMS for non-technical content updates
-- [ ] **Performance**: Image optimization and lazy loading
-- [ ] **SEO**: Enhanced meta tags and structured data
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io/issues).
-
-## 📞 Contact
-
-- **Portfolio**: [jonnathanriquelmo.github.io](https://jonnathanriquelmo.github.io)
-- **LinkedIn**: [Jonnathan Riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
-- **Email**: jonnathan.riquelmo@gmail.com
-- **WhatsApp**: +55 (55) 99126-4141
-- **Lattes**: [Academic Profile](https://lattes.cnpq.br/7479721014622709)
-- **Last.fm**: [Music Profile](https://www.last.fm/user/jhon_in_flames)
-- **Instagram**: [@u53r.n07.f0und](https://www.instagram.com/u53r.n07.f0und)
+> [🇧🇷 Versão em Português](#-versão-em-português) | [🇺🇸 English Version](#-english-version)
 
 ---
 
-<div align="center">
-  <p>Built with ❤️ using vanilla web technologies</p>
-  <p>⭐ Star this repo if you found it helpful!</p>
-</div>
+## 🇺🇸 English Version
+
+A modern and interactive personal portfolio developed as a Single Page Application (SPA) to showcase professional experiences, academic background, and technical skills.
+
+### ✨ Key Features
+
+- **🎨 Responsive Design**: Adaptable to different screen sizes (desktop, tablet, mobile)
+- **🌓 Light/Dark Theme**: Theme switching with localStorage persistence
+- **🌍 Multilingual**: Support for Portuguese (pt-BR) and English (en)
+- **✨ Interactive Animations**: Animated particle system with mouse interaction
+- **🚀 Smooth Navigation**: Smooth scrolling between sections
+- **📱 Mobile Menu**: Interface adapted for mobile devices
+
+### 🛠️ Technologies Used
+
+#### Frontend
+- **HTML5**: Semantic page structure
+- **CSS3**: Advanced styling with:
+  - CSS Variables (Custom Properties) for themes
+  - Flexbox and Grid Layout
+  - CSS animations and transitions
+  - Media queries for responsiveness
+  - Backdrop-filter for blur effects
+- **JavaScript (Vanilla)**: Interactive functionalities without frameworks
+
+#### External Libraries
+- **Font Awesome 6.4.0**: Vector icons for interface and social media
+- **Google Fonts**: Typography (Segoe UI as fallback)
+
+#### Visual Resources
+- **Canvas API**: Real-time animated particle system
+- **CSS Gradients**: Visual effects on texts and elements
+- **Box Shadow**: Depth and elevation of components
+- **Glassmorphism**: Glass effect on header with backdrop-filter
+
+### 📁 Project Structure
+
+```
+jonnathanriquelmo.github.io/
+├── index.html          # Main file (SPA)
+├── README.md          # Project documentation
+└── LICENSE           # Project license
+```
+
+### 🎨 Detailed Features
+
+#### Theme System
+- **Dark Theme**: Cyberpunk palette with cyan blue (#00d9ff) and magenta (#ff00ff) tones
+- **Light Theme**: Professional palette with blue (#0066cc) and purple (#9c27b0)
+- **Persistence**: Preference saved in browser localStorage
+
+#### Internationalization (i18n)
+- **Brazilian Portuguese**: Default language
+- **English**: Complete interface translation
+- **Automatic Detection**: Based on saved preference or system default
+- **Dynamic Switching**: Toggle without page reload
+
+#### Particle Animation
+- **Canvas 2D**: Rendering of 100 animated particles
+- **Mouse Interaction**: Particles react to cursor proximity
+- **Dynamic Connections**: Lines connect nearby particles
+- **Responsive**: Adapts to window resizing
+- **Optimized**: RequestAnimationFrame for smooth performance
+
+#### Navigation and UX
+- **Fixed Header**: Always visible navigation with blur effect
+- **Smooth Scroll**: Animated transitions between sections
+- **Hamburger Menu**: Mobile interface with side menu
+- **Social Links**: Integration with LinkedIn, GitHub, Lattes, etc.
+
+### 📊 Structured Data
+
+Content is organized in an embedded JSON object, including:
+
+- **Personal Information**: Name, title, description
+- **Professional Experience**: Work history with details
+- **Academic Background**: Education and qualifications
+- **Technical Skills**: Technologies and tools
+- **Contact**: WhatsApp, email, location
+- **Social Networks**: Links to professional profiles
+
+### 🚀 How to Run
+
+#### Option 1: Local Server
+```bash
+# Clone the repository
+git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
+
+# Enter the directory
+cd jonnathanriquelmo.github.io
+
+# Start a local server (Python)
+python -m http.server 8000
+
+# Or using Node.js
+npx serve .
+```
+
+#### Option 2: GitHub Pages
+The project is configured for automatic deployment via GitHub Pages:
+- **URL**: https://jonnathanriquelmo.github.io
+- **Branch**: main
+- **Folder**: root
+
+#### Option 3: Local File
+Open the `index.html` file directly in any modern browser.
+
+### 🌐 Compatibility
+
+#### Supported Browsers
+- **Chrome/Chromium**: 60+
+- **Firefox**: 55+
+- **Safari**: 12+
+- **Edge**: 79+
+
+#### Used Resources
+- CSS Custom Properties (IE 11+ with polyfill)
+- Canvas API (All modern browsers)
+- LocalStorage (IE 8+)
+- Backdrop-filter (Chrome 76+, Firefox 103+)
+
+### 📱 Responsiveness
+
+#### Breakpoints
+- **Desktop**: > 768px
+- **Tablet**: 768px - 1024px
+- **Mobile**: < 768px
+
+#### Mobile Adaptations
+- Hamburger menu
+- Vertical timeline
+- Font resizing
+- Spacing optimization
+- Touch-friendly buttons
+
+### 🎯 Performance
+
+#### Implemented Optimizations
+- **Inline CSS**: Reduces HTTP requests
+- **Vanilla JavaScript**: No framework overhead
+- **Lazy Loading**: Dynamically loaded content
+- **RequestAnimationFrame**: Optimized animations
+- **LocalStorage**: Preference caching
+
+#### Expected Metrics
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **First Input Delay**: < 100ms
+
+### 🔧 Customization
+
+#### Modify Personal Data
+Edit the `jsonData` object in the `index.html` file (line ~520):
+
+```javascript
+const jsonData = {
+    "name": "Your Name",
+    "title": {
+        "pt-BR": "Seu Título em Português",
+        "en": "Your Title in English"
+    },
+    // ... other data
+};
+```
+
+#### Customize Colors
+Modify the CSS Custom Properties in `:root` (line ~7):
+
+```css
+:root {
+    --accent-color: #00d9ff;        /* Primary color */
+    --accent-secondary: #ff00ff;    /* Secondary color */
+    --bg-color: #0f0f1e;           /* Background */
+    /* ... other variables */
+}
+```
+
+#### Add Languages
+1. Extend the `translations` object (line ~720)
+2. Add translations to the `jsonData` object
+3. Implement detection logic in JavaScript
+
+### 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+### 👨‍💻 Author
+
+**Jonnathan Riquelmo**
+- LinkedIn: [jonnathan-riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
+- GitHub: [JonnathanRiquelmo](https://github.com/JonnathanRiquelmo)
+- Email: jonnathan.riquelmo@gmail.com
+
+---
+
+*Developed with ❤️ using modern web technologies*
+
+---
+
+## 🇧🇷 Versão em Português
+
+Um portfólio pessoal moderno e interativo desenvolvido como Single Page Application (SPA) para apresentar experiências profissionais, formação acadêmica e habilidades técnicas.
+
+### ✨ Principais Funcionalidades
+
+- **🎨 Design Responsivo**: Adaptável a diferentes tamanhos de tela (desktop, tablet, mobile)
+- **🌓 Tema Claro/Escuro**: Alternância de tema com persistência no localStorage
+- **🌍 Multilíngue**: Suporte para português (pt-BR) e inglês (en)
+- **✨ Animações Interativas**: Sistema de partículas animadas com interação do mouse
+- **🚀 Navegação Suave**: Scroll suave entre seções
+- **📱 Menu Mobile**: Interface adaptada para dispositivos móveis
+
+### 🛠️ Tecnologias Utilizadas
+
+#### Frontend
+- **HTML5**: Estrutura semântica da página
+- **CSS3**: Estilização avançada com:
+  - CSS Variables (Custom Properties) para temas
+  - Flexbox e Grid Layout
+  - Animações e transições CSS
+  - Media queries para responsividade
+  - Backdrop-filter para efeitos de desfoque
+- **JavaScript (Vanilla)**: Funcionalidades interativas sem frameworks
+
+#### Bibliotecas Externas
+- **Font Awesome 6.4.0**: Ícones vetoriais para interface e redes sociais
+- **Google Fonts**: Tipografia (Segoe UI como fallback)
+
+#### Recursos Visuais
+- **Canvas API**: Sistema de partículas animadas em tempo real
+- **CSS Gradients**: Efeitos visuais em textos e elementos
+- **Box Shadow**: Profundidade e elevação dos componentes
+- **Glassmorphism**: Efeito de vidro no cabeçalho com backdrop-filter
+
+### 📁 Estrutura do Projeto
+
+```
+jonnathanriquelmo.github.io/
+├── index.html          # Arquivo principal (SPA)
+├── README.md          # Documentação do projeto
+└── LICENSE           # Licença do projeto
+```
+
+### 🎨 Funcionalidades Detalhadas
+
+#### Sistema de Temas
+- **Tema Escuro**: Paleta cyberpunk com tons de azul ciano (#00d9ff) e magenta (#ff00ff)
+- **Tema Claro**: Paleta profissional com azul (#0066cc) e roxo (#9c27b0)
+- **Persistência**: Preferência salva no localStorage do navegador
+
+#### Internacionalização (i18n)
+- **Português Brasileiro**: Idioma padrão
+- **Inglês**: Tradução completa da interface
+- **Detecção Automática**: Baseada na preferência salva ou padrão do sistema
+- **Alternância Dinâmica**: Troca sem recarregamento da página
+
+#### Animação de Partículas
+- **Canvas 2D**: Renderização de 100 partículas animadas
+- **Interação com Mouse**: Partículas reagem à proximidade do cursor
+- **Conexões Dinâmicas**: Linhas conectam partículas próximas
+- **Responsivo**: Adapta-se ao redimensionamento da janela
+- **Otimizado**: RequestAnimationFrame para performance suave
+
+#### Navegação e UX
+- **Cabeçalho Fixo**: Navegação sempre visível com efeito de desfoque
+- **Scroll Suave**: Transições animadas entre seções
+- **Menu Hambúrguer**: Interface mobile com menu lateral
+- **Links Sociais**: Integração com LinkedIn, GitHub, Lattes, etc.
+
+### 📊 Dados Estruturados
+
+O conteúdo é organizado em um objeto JSON incorporado, incluindo:
+
+- **Informações Pessoais**: Nome, título, descrição
+- **Experiência Profissional**: Histórico de trabalho com detalhes
+- **Formação Acadêmica**: Educação e qualificações
+- **Habilidades Técnicas**: Tecnologias e ferramentas
+- **Contato**: WhatsApp, email, localização
+- **Redes Sociais**: Links para perfis profissionais
+
+### 🚀 Como Executar
+
+#### Opção 1: Servidor Local
+```bash
+# Clone o repositório
+git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
+
+# Entre no diretório
+cd jonnathanriquelmo.github.io
+
+# Inicie um servidor local (Python)
+python -m http.server 8000
+
+# Ou usando Node.js
+npx serve .
+```
+
+#### Opção 2: GitHub Pages
+O projeto está configurado para deploy automático via GitHub Pages:
+- **URL**: https://jonnathanriquelmo.github.io
+- **Branch**: main
+- **Pasta**: root
+
+#### Opção 3: Arquivo Local
+Abra o arquivo `index.html` diretamente em qualquer navegador moderno.
+
+### 🌐 Compatibilidade
+
+#### Navegadores Suportados
+- **Chrome/Chromium**: 60+
+- **Firefox**: 55+
+- **Safari**: 12+
+- **Edge**: 79+
+
+#### Recursos Utilizados
+- CSS Custom Properties (IE 11+ com polyfill)
+- Canvas API (Todos os navegadores modernos)
+- LocalStorage (IE 8+)
+- Backdrop-filter (Chrome 76+, Firefox 103+)
+
+### 📱 Responsividade
+
+#### Breakpoints
+- **Desktop**: > 768px
+- **Tablet**: 768px - 1024px
+- **Mobile**: < 768px
+
+#### Adaptações Mobile
+- Menu hambúrguer
+- Timeline vertical
+- Redimensionamento de fontes
+- Otimização de espaçamentos
+- Botões touch-friendly
+
+### 🎯 Performance
+
+#### Otimizações Implementadas
+- **CSS Inline**: Reduz requisições HTTP
+- **JavaScript Vanilla**: Sem overhead de frameworks
+- **Lazy Loading**: Conteúdo carregado dinamicamente
+- **RequestAnimationFrame**: Animações otimizadas
+- **LocalStorage**: Cache de preferências
+
+#### Métricas Esperadas
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **First Input Delay**: < 100ms
+
+### 🔧 Personalização
+
+#### Modificar Dados Pessoais
+Edite o objeto `jsonData` no arquivo `index.html` (linha ~520):
+
+```javascript
+const jsonData = {
+    "name": "Seu Nome",
+    "title": {
+        "pt-BR": "Seu Título em Português",
+        "en": "Your Title in English"
+    },
+    // ... outros dados
+};
+```
+
+#### Personalizar Cores
+Modifique as CSS Custom Properties no `:root` (linha ~7):
+
+```css
+:root {
+    --accent-color: #00d9ff;        /* Cor principal */
+    --accent-secondary: #ff00ff;    /* Cor secundária */
+    --bg-color: #0f0f1e;           /* Fundo */
+    /* ... outras variáveis */
+}
+```
+
+#### Adicionar Idiomas
+1. Estenda o objeto `translations` (linha ~720)
+2. Adicione as traduções no objeto `jsonData`
+3. Implemente a lógica de detecção no JavaScript
+
+### 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+### 👨‍💻 Autor
+
+**Jonnathan Riquelmo**
+- LinkedIn: [jonnathan-riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
+- GitHub: [JonnathanRiquelmo](https://github.com/JonnathanRiquelmo)
+- Email: jonnathan.riquelmo@gmail.com
+
+---
+
+*Desenvolvido com ❤️ usando tecnologias web modernas*
