@@ -1,403 +1,217 @@
-# 🌟 Personal Portfolio - Jonnathan Riquelmo
+# Jonnathan Riquelmo - Portfolio
 
-> [🇧🇷 Versão em Português](#-versão-em-português) | [🇺🇸 English Version](#-english-version)
+Este é o repositório do meu portfólio pessoal, uma single-page application (SPA) criada para mostrar minhas habilidades, experiência profissional e formação acadêmica. O projeto foi desenvolvido com foco em design moderno, interatividade e performance, utilizando apenas tecnologias web nativas (HTML, CSS e JavaScript).
 
----
-
-## 🇺🇸 English Version
-
-A modern and interactive personal portfolio developed as a Single Page Application (SPA) to showcase professional experiences, academic background, and technical skills.
-
-### ✨ Key Features
-
-- **🎨 Responsive Design**: Adaptable to different screen sizes (desktop, tablet, mobile)
-- **🌓 Light/Dark Theme**: Theme switching with localStorage persistence
-- **🌍 Multilingual**: Support for Portuguese (pt-BR) and English (en)
-- **✨ Interactive Animations**: Animated particle system with mouse interaction
-- **🚀 Smooth Navigation**: Smooth scrolling between sections
-- **📱 Mobile Menu**: Interface adapted for mobile devices
-
-### 🛠️ Technologies Used
-
-#### Frontend
-- **HTML5**: Semantic page structure
-- **CSS3**: Advanced styling with:
-  - CSS Variables (Custom Properties) for themes
-  - Flexbox and Grid Layout
-  - CSS animations and transitions
-  - Media queries for responsiveness
-  - Backdrop-filter for blur effects
-- **JavaScript (Vanilla)**: Interactive functionalities without frameworks
-
-#### External Libraries
-- **Font Awesome 6.4.0**: Vector icons for interface and social media
-- **Google Fonts**: Typography (Segoe UI as fallback)
-
-#### Visual Resources
-- **Canvas API**: Real-time animated particle system
-- **CSS Gradients**: Visual effects on texts and elements
-- **Box Shadow**: Depth and elevation of components
-- **Glassmorphism**: Glass effect on header with backdrop-filter
-
-### 📁 Project Structure
-
-```
-jonnathanriquelmo.github.io/
-├── index.html          # Main file (SPA)
-├── README.md          # Project documentation
-└── LICENSE           # Project license
-```
-
-### 🎨 Detailed Features
-
-#### Theme System
-- **Dark Theme**: Cyberpunk palette with cyan blue (#00d9ff) and magenta (#ff00ff) tones
-- **Light Theme**: Professional palette with blue (#0066cc) and purple (#9c27b0)
-- **Persistence**: Preference saved in browser localStorage
-
-#### Internationalization (i18n)
-- **Brazilian Portuguese**: Default language
-- **English**: Complete interface translation
-- **Automatic Detection**: Based on saved preference or system default
-- **Dynamic Switching**: Toggle without page reload
-
-#### Particle Animation
-- **Canvas 2D**: Rendering of 100 animated particles
-- **Mouse Interaction**: Particles react to cursor proximity
-- **Dynamic Connections**: Lines connect nearby particles
-- **Responsive**: Adapts to window resizing
-- **Optimized**: RequestAnimationFrame for smooth performance
-
-#### Navigation and UX
-- **Fixed Header**: Always visible navigation with blur effect
-- **Smooth Scroll**: Animated transitions between sections
-- **Hamburger Menu**: Mobile interface with side menu
-- **Social Links**: Integration with LinkedIn, GitHub, Lattes, etc.
-
-### 📊 Structured Data
-
-Content is organized in an embedded JSON object, including:
-
-- **Personal Information**: Name, title, description
-- **Professional Experience**: Work history with details
-- **Academic Background**: Education and qualifications
-- **Technical Skills**: Technologies and tools
-- **Contact**: WhatsApp, email, location
-- **Social Networks**: Links to professional profiles
-
-### 🚀 How to Run
-
-#### Option 1: Local Server
-```bash
-# Clone the repository
-git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
-
-# Enter the directory
-cd jonnathanriquelmo.github.io
-
-# Start a local server (Python)
-python -m http.server 8000
-
-# Or using Node.js
-npx serve .
-```
-
-#### Option 2: GitHub Pages
-The project is configured for automatic deployment via GitHub Pages:
-- **URL**: https://jonnathanriquelmo.github.io
-- **Branch**: main
-- **Folder**: root
-
-#### Option 3: Local File
-Open the `index.html` file directly in any modern browser.
-
-### 🌐 Compatibility
-
-#### Supported Browsers
-- **Chrome/Chromium**: 60+
-- **Firefox**: 55+
-- **Safari**: 12+
-- **Edge**: 79+
-
-#### Used Resources
-- CSS Custom Properties (IE 11+ with polyfill)
-- Canvas API (All modern browsers)
-- LocalStorage (IE 8+)
-- Backdrop-filter (Chrome 76+, Firefox 103+)
-
-### 📱 Responsiveness
-
-#### Breakpoints
-- **Desktop**: > 768px
-- **Tablet**: 768px - 1024px
-- **Mobile**: < 768px
-
-#### Mobile Adaptations
-- Hamburger menu
-- Vertical timeline
-- Font resizing
-- Spacing optimization
-- Touch-friendly buttons
-
-### 🎯 Performance
-
-#### Implemented Optimizations
-- **Inline CSS**: Reduces HTTP requests
-- **Vanilla JavaScript**: No framework overhead
-- **Lazy Loading**: Dynamically loaded content
-- **RequestAnimationFrame**: Optimized animations
-- **LocalStorage**: Preference caching
-
-#### Expected Metrics
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **First Input Delay**: < 100ms
-
-### 🔧 Customization
-
-#### Modify Personal Data
-Edit the `jsonData` object in the `index.html` file (line ~520):
-
-```javascript
-const jsonData = {
-    "name": "Your Name",
-    "title": {
-        "pt-BR": "Seu Título em Português",
-        "en": "Your Title in English"
-    },
-    // ... other data
-};
-```
-
-#### Customize Colors
-Modify the CSS Custom Properties in `:root` (line ~7):
-
-```css
-:root {
-    --accent-color: #00d9ff;        /* Primary color */
-    --accent-secondary: #ff00ff;    /* Secondary color */
-    --bg-color: #0f0f1e;           /* Background */
-    /* ... other variables */
-}
-```
-
-#### Add Languages
-1. Extend the `translations` object (line ~720)
-2. Add translations to the `jsonData` object
-3. Implement detection logic in JavaScript
-
-### 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
-### 👨‍💻 Author
-
-**Jonnathan Riquelmo**
-- LinkedIn: [jonnathan-riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
-- GitHub: [JonnathanRiquelmo](https://github.com/JonnathanRiquelmo)
-- Email: jonnathan.riquelmo@gmail.com
+[Veja a demonstração ao vivo](https://jonnathanriquelmo.github.io/)
 
 ---
 
-*Developed with ❤️ using modern web technologies*
+## Sumário
+
+- [Funcionalidades](#funcionalidades)
+- [Recursos Visuais](#recursos-visuais)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Executar](#como-executar)
+- [Personalização](#personalização)
+- [Licença](#licença)
 
 ---
 
-## 🇧🇷 Versão em Português
+## Funcionalidades
 
-Um portfólio pessoal moderno e interativo desenvolvido como Single Page Application (SPA) para apresentar experiências profissionais, formação acadêmica e habilidades técnicas.
+- **Design Responsivo**: Totalmente adaptável a diferentes tamanhos de tela, de desktops a dispositivos móveis.
+- **Tema Claro/Escuro**: Permite ao usuário alternar entre um tema claro e um escuro, com a preferência salva no `localStorage`.
+- **Multilíngue (i18n)**: Suporte para Português (pt-BR) e Inglês (en), com o idioma salvo no `localStorage`.
+- **Carregamento de Conteúdo Dinâmico**: Todas as informações (experiência, formação, etc.) são carregadas a partir de um único objeto JSON, facilitando a manutenção.
+- **Navegação Suave**: Animação de rolagem suave ao navegar pelas seções.
+- **Menu Mobile Otimizado**: Menu de navegação especial para dispositivos móveis, com fundo opaco e fechamento automático ao clicar em um link.
 
-### ✨ Principais Funcionalidades
+## Recursos Visuais
 
-- **🎨 Design Responsivo**: Adaptável a diferentes tamanhos de tela (desktop, tablet, mobile)
-- **🌓 Tema Claro/Escuro**: Alternância de tema com persistência no localStorage
-- **🌍 Multilíngue**: Suporte para português (pt-BR) e inglês (en)
-- **✨ Animações Interativas**: Sistema de partículas animadas com interação do mouse
-- **🚀 Navegação Suave**: Scroll suave entre seções
-- **📱 Menu Mobile**: Interface adaptada para dispositivos móveis
+- **Animação de Fundo "Matrix"**: Um efeito de "chuva digital" inspirado no filme *Matrix* foi criado com a API de Canvas, adicionando um toque cyberpunk e dinâmico ao fundo da página.
+- **Animações de Entrada**: Elementos aparecem com animações sutis de fade-in e slide-in conforme o usuário rola a página.
+- **Elementos Interativos**: Efeitos de hover e foco em botões, links e cards para melhorar a experiência do usuário.
+- **Design "Glassmorphism"**: Uso de transparência e desfoque para criar um efeito de vidro fosco em elementos como o cabeçalho e os cards.
 
-### 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-#### Frontend
-- **HTML5**: Estrutura semântica da página
+- **HTML5**: Estrutura semântica e moderna.
 - **CSS3**: Estilização avançada com:
-  - CSS Variables (Custom Properties) para temas
-  - Flexbox e Grid Layout
-  - Animações e transições CSS
-  - Media queries para responsividade
-  - Backdrop-filter para efeitos de desfoque
-- **JavaScript (Vanilla)**: Funcionalidades interativas sem frameworks
+  - **Variáveis CSS**: Para fácil gerenciamento de temas e cores.
+  - **Flexbox e Grid Layout**: Para criação de layouts complexos e responsivos.
+  - **Animações e Transições**: Para interatividade e feedback visual.
+- **JavaScript (Vanilla)**: Todo o dinamismo do site é construído com JavaScript puro, sem a necessidade de frameworks ou bibliotecas externas.
+  - **DOM Manipulation**: Para criar e atualizar elementos da página dinamicamente.
+  - **Fetch API**: Para carregar dados (embora neste projeto os dados estejam em um objeto JSON local).
+  - **Canvas API**: Para a animação de fundo "Matrix".
+  - **Intersection Observer API**: Para acionar animações de entrada de forma performática.
+- **Font Awesome**: Para ícones vetoriais.
+- **Google Fonts**: Para tipografia personalizada.
 
-#### Bibliotecas Externas
-- **Font Awesome 6.4.0**: Ícones vetoriais para interface e redes sociais
-- **Google Fonts**: Tipografia (Segoe UI como fallback)
-
-#### Recursos Visuais
-- **Canvas API**: Sistema de partículas animadas em tempo real
-- **CSS Gradients**: Efeitos visuais em textos e elementos
-- **Box Shadow**: Profundidade e elevação dos componentes
-- **Glassmorphism**: Efeito de vidro no cabeçalho com backdrop-filter
-
-### 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
-jonnathanriquelmo.github.io/
-├── index.html          # Arquivo principal (SPA)
-├── README.md          # Documentação do projeto
-└── LICENSE           # Licença do projeto
+/
+├── LICENSE
+├── README.md
+└── index.html
 ```
 
-### 🎨 Funcionalidades Detalhadas
+- **`index.html`**: O único arquivo que contém toda a estrutura, estilo e lógica da aplicação.
+  - **CSS**: O CSS está embutido na tag `<style>` dentro do `<head>`.
+  - **JavaScript**: O código JS está embutido na tag `<script>` antes do fechamento do `<body>`.
+  - **Dados**: Todas as informações de texto estão centralizadas em um objeto JSON (`jsonData`) dentro do script.
+- **`README.md`**: Este arquivo.
+- **`LICENSE`**: A licença do projeto.
 
-#### Sistema de Temas
-- **Tema Escuro**: Paleta cyberpunk com tons de azul ciano (#00d9ff) e magenta (#ff00ff)
-- **Tema Claro**: Paleta profissional com azul (#0066cc) e roxo (#9c27b0)
-- **Persistência**: Preferência salva no localStorage do navegador
+## Como Executar
 
-#### Internacionalização (i18n)
-- **Português Brasileiro**: Idioma padrão
-- **Inglês**: Tradução completa da interface
-- **Detecção Automática**: Baseada na preferência salva ou padrão do sistema
-- **Alternância Dinâmica**: Troca sem recarregamento da página
+Como este é um projeto front-end puro, você pode simplesmente abrir o arquivo `index.html` em qualquer navegador moderno.
 
-#### Animação de Partículas
-- **Canvas 2D**: Renderização de 100 partículas animadas
-- **Interação com Mouse**: Partículas reagem à proximidade do cursor
-- **Conexões Dinâmicas**: Linhas conectam partículas próximas
-- **Responsivo**: Adapta-se ao redimensionamento da janela
-- **Otimizado**: RequestAnimationFrame para performance suave
+Para uma experiência mais próxima de um ambiente de desenvolvimento, você pode usar um servidor local:
 
-#### Navegação e UX
-- **Cabeçalho Fixo**: Navegação sempre visível com efeito de desfoque
-- **Scroll Suave**: Transições animadas entre seções
-- **Menu Hambúrguer**: Interface mobile com menu lateral
-- **Links Sociais**: Integração com LinkedIn, GitHub, Lattes, etc.
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
+    ```
+2.  **Navegue até o diretório:**
+    ```bash
+    cd jonnathanriquelmo.github.io
+    ```
+3.  **Inicie um servidor local.** Se você tiver o Python instalado, pode usar:
+    ```bash
+    python -m http.server
+    ```
+    Ou, se tiver o Node.js, pode usar o pacote `live-server`:
+    ```bash
+    npx live-server
+    ```
+4.  **Abra o navegador** e acesse `http://localhost:8000` (ou a porta indicada pelo servidor).
 
-### 📊 Dados Estruturados
+## Personalização
 
-O conteúdo é organizado em um objeto JSON incorporado, incluindo:
+Para personalizar o conteúdo do portfólio, basta editar o objeto `jsonData` dentro da tag `<script>` no arquivo `index.html`. Você pode alterar:
 
-- **Informações Pessoais**: Nome, título, descrição
-- **Experiência Profissional**: Histórico de trabalho com detalhes
-- **Formação Acadêmica**: Educação e qualificações
-- **Habilidades Técnicas**: Tecnologias e ferramentas
-- **Contato**: WhatsApp, email, localização
-- **Redes Sociais**: Links para perfis profissionais
+- Informações pessoais (nome, título, descrição).
+- Links de redes sociais.
+- Experiência profissional.
+- Formação acadêmica.
+- Habilidades técnicas.
+- Informações de contato.
+- Traduções de texto.
 
-### 🚀 Como Executar
+## Licença
 
-#### Opção 1: Servidor Local
-```bash
-# Clone o repositório
-git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
-
-# Entre no diretório
-cd jonnathanriquelmo.github.io
-
-# Inicie um servidor local (Python)
-python -m http.server 8000
-
-# Ou usando Node.js
-npx serve .
-```
-
-#### Opção 2: GitHub Pages
-O projeto está configurado para deploy automático via GitHub Pages:
-- **URL**: https://jonnathanriquelmo.github.io
-- **Branch**: main
-- **Pasta**: root
-
-#### Opção 3: Arquivo Local
-Abra o arquivo `index.html` diretamente em qualquer navegador moderno.
-
-### 🌐 Compatibilidade
-
-#### Navegadores Suportados
-- **Chrome/Chromium**: 60+
-- **Firefox**: 55+
-- **Safari**: 12+
-- **Edge**: 79+
-
-#### Recursos Utilizados
-- CSS Custom Properties (IE 11+ com polyfill)
-- Canvas API (Todos os navegadores modernos)
-- LocalStorage (IE 8+)
-- Backdrop-filter (Chrome 76+, Firefox 103+)
-
-### 📱 Responsividade
-
-#### Breakpoints
-- **Desktop**: > 768px
-- **Tablet**: 768px - 1024px
-- **Mobile**: < 768px
-
-#### Adaptações Mobile
-- Menu hambúrguer
-- Timeline vertical
-- Redimensionamento de fontes
-- Otimização de espaçamentos
-- Botões touch-friendly
-
-### 🎯 Performance
-
-#### Otimizações Implementadas
-- **CSS Inline**: Reduz requisições HTTP
-- **JavaScript Vanilla**: Sem overhead de frameworks
-- **Lazy Loading**: Conteúdo carregado dinamicamente
-- **RequestAnimationFrame**: Animações otimizadas
-- **LocalStorage**: Cache de preferências
-
-#### Métricas Esperadas
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **First Input Delay**: < 100ms
-
-### 🔧 Personalização
-
-#### Modificar Dados Pessoais
-Edite o objeto `jsonData` no arquivo `index.html` (linha ~520):
-
-```javascript
-const jsonData = {
-    "name": "Seu Nome",
-    "title": {
-        "pt-BR": "Seu Título em Português",
-        "en": "Your Title in English"
-    },
-    // ... outros dados
-};
-```
-
-#### Personalizar Cores
-Modifique as CSS Custom Properties no `:root` (linha ~7):
-
-```css
-:root {
-    --accent-color: #00d9ff;        /* Cor principal */
-    --accent-secondary: #ff00ff;    /* Cor secundária */
-    --bg-color: #0f0f1e;           /* Fundo */
-    /* ... outras variáveis */
-}
-```
-
-#### Adicionar Idiomas
-1. Estenda o objeto `translations` (linha ~720)
-2. Adicione as traduções no objeto `jsonData`
-3. Implemente a lógica de detecção no JavaScript
-
-### 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-### 👨‍💻 Autor
-
-**Jonnathan Riquelmo**
-- LinkedIn: [jonnathan-riquelmo](https://www.linkedin.com/in/jonnathan-riquelmo)
-- GitHub: [JonnathanRiquelmo](https://github.com/JonnathanRiquelmo)
-- Email: jonnathan.riquelmo@gmail.com
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-*Desenvolvido com ❤️ usando tecnologias web modernas*
+# English Version
+
+# Jonnathan Riquelmo - Portfolio
+
+This is the repository for my personal portfolio, a single-page application (SPA) created to showcase my skills, professional experience, and academic background. The project was developed with a focus on modern design, interactivity, and performance, using only native web technologies (HTML, CSS, and JavaScript).
+
+[View the live demo](https://jonnathanriquelmo.github.io/)
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Visual Features](#visual-features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [How to Run](#how-to-run)
+- [Customization](#customization)
+- [License](#license)
+
+---
+
+## Features
+
+- **Responsive Design**: Fully adaptable to different screen sizes, from desktops to mobile devices.
+- **Light/Dark Theme**: Allows the user to switch between a light and a dark theme, with the preference saved in `localStorage`.
+- **Multilingual (i18n)**: Support for Portuguese (pt-BR) and English (en), with the language saved in `localStorage`.
+- **Dynamic Content Loading**: All information (experience, education, etc.) is loaded from a single JSON object, making maintenance easy.
+- **Smooth Scrolling**: Smooth scrolling animation when navigating through sections.
+- **Optimized Mobile Menu**: A special navigation menu for mobile devices, with an opaque background and auto-closing on link clicks.
+
+## Visual Features
+
+- **"Matrix" Background Animation**: A "digital rain" effect inspired by the movie *The Matrix* was created with the Canvas API, adding a dynamic and cyberpunk touch to the page background.
+- **Entry Animations**: Elements appear with subtle fade-in and slide-in animations as the user scrolls the page.
+- **Interactive Elements**: Hover and focus effects on buttons, links, and cards to enhance the user experience.
+- **"Glassmorphism" Design**: Use of transparency and blur to create a frosted glass effect on elements like the header and cards.
+
+## Technologies Used
+
+- **HTML5**: Semantic and modern structure.
+- **CSS3**: Advanced styling with:
+  - **CSS Variables**: For easy management of themes and colors.
+  - **Flexbox and Grid Layout**: For creating complex and responsive layouts.
+  - **Animations and Transitions**: For interactivity and visual feedback.
+- **JavaScript (Vanilla)**: All site dynamism is built with pure JavaScript, without the need for external frameworks or libraries.
+  - **DOM Manipulation**: To dynamically create and update page elements.
+  - **Fetch API**: To load data (although in this project, the data is in a local JSON object).
+  - **Canvas API**: For the "Matrix" background animation.
+  - **Intersection Observer API**: To trigger entry animations performantly.
+- **Font Awesome**: For vector icons.
+- **Google Fonts**: For custom typography.
+
+## Project Structure
+
+```
+/
+├── LICENSE
+├── README.md
+└── index.html
+```
+
+- **`index.html`**: The single file containing the entire structure, style, and logic of the application.
+  - **CSS**: The CSS is embedded in the `<style>` tag within the `<head>`.
+  - **JavaScript**: The JS code is embedded in the `<script>` tag before the closing `<body>`.
+  - **Data**: All text information is centralized in a JSON object (`jsonData`) within the script.
+- **`README.md`**: This file.
+- **`LICENSE`**: The project license.
+
+## How to Run
+
+As this is a pure front-end project, you can simply open the `index.html` file in any modern browser.
+
+For an experience closer to a development environment, you can use a local server:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/JonnathanRiquelmo/jonnathanriquelmo.github.io.git
+    ```
+2.  **Navigate to the directory:**
+    ```bash
+    cd jonnathanriquelmo.github.io
+    ```
+3.  **Start a local server.** If you have Python installed, you can use:
+    ```bash
+    python -m http.server
+    ```
+    Or, if you have Node.js, you can use the `live-server` package:
+    ```bash
+    npx live-server
+    ```
+4.  **Open your browser** and go to `http://localhost:8000` (or the port indicated by the server).
+
+## Customization
+
+To customize the portfolio content, simply edit the `jsonData` object within the `<script>` tag in the `index.html` file. You can change:
+
+- Personal information (name, title, description).
+- Social media links.
+- Professional experience.
+- Academic background.
+- Technical skills.
+- Contact information.
+- Text translations.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
