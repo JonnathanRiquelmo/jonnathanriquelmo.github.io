@@ -25,7 +25,7 @@ const resumeData = {
         "avatar_initials": "JR"
     },
     "contact": [
-        { "type": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/jonnathanriquelmo", "icon": "fab fa-linkedin" },
+        { "type": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/jonnathan-riquelmo", "icon": "fab fa-linkedin" },
         { "type": "email", "label": "Email", "url": "mailto:jonnathan.riquelmo@gmail.com", "icon": "fas fa-envelope" },
         { "type": "github", "label": "GitHub", "url": "https://github.com/jonnathanriquelmo", "icon": "fab fa-github" }
     ],
