@@ -1,6 +1,6 @@
 # Jonnathan Riquelmo - Portfolio
 
-Este é o repositório do meu portfólio pessoal, uma single-page application (SPA) criada para mostrar minhas habilidades, experiência profissional e formação acadêmica. O projeto foi desenvolvido com foco em design moderno, interatividade e performance, utilizando apenas tecnologias web nativas (HTML, CSS e JavaScript).
+Este é o repositório do meu portfólio pessoal, uma single-page application (SPA) totalmente reformulada para refletir uma estética "Modern Matrix". O projeto demonstra minhas habilidades em engenharia de software, design de sistemas e atenção aos detalhes, utilizando tecnologias web nativas com uma arquitetura limpa e organizada.
 
 [Veja a demonstração ao vivo](https://jonnathanriquelmo.github.io/)
 
@@ -9,7 +9,7 @@ Este é o repositório do meu portfólio pessoal, uma single-page application (S
 ## Sumário
 
 - [Funcionalidades](#funcionalidades)
-- [Recursos Visuais](#recursos-visuais)
+- [Design System & UI](#design-system--ui)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Como Executar](#como-executar)
@@ -20,56 +20,59 @@ Este é o repositório do meu portfólio pessoal, uma single-page application (S
 
 ## Funcionalidades
 
-- **Design Responsivo**: Totalmente adaptável a diferentes tamanhos de tela, de desktops a dispositivos móveis.
-- **Tema Claro/Escuro**: Permite ao usuário alternar entre um tema claro e um escuro, com a preferência salva no `localStorage`.
-- **Multilíngue (i18n)**: Suporte para Português (pt-BR) e Inglês (en), com o idioma salvo no `localStorage`.
-- **Carregamento de Conteúdo Dinâmico**: Todas as informações (experiência, formação, etc.) são carregadas a partir de um único objeto JSON, facilitando a manutenção.
-- **Navegação Suave**: Animação de rolagem suave ao navegar pelas seções.
-- **Menu Mobile Otimizado**: Menu de navegação especial para dispositivos móveis, com fundo opaco e fechamento automático ao clicar em um link.
+- **Arquitetura Moderna**: Separação clara de responsabilidades entre Estrutura (HTML), Estilo (CSS) e Comportamento/Dados (JS).
+- **Design Responsivo**: Layout fluido que se adapta perfeitamente a desktops, tablets e dispositivos móveis.
+- **Internacionalização (i18n)**: Suporte nativo para Português (PT) e Inglês (EN) com alternância instantânea.
+- **Renderização Dinâmica**: Todo o conteúdo (experiência, formação, skills) é gerado via JavaScript a partir de um arquivo de dados centralizado.
+- **Menu Mobile Interativo**: Navegação otimizada para telas sensíveis ao toque com animações fluidas.
 
-## Recursos Visuais
+## Design System & UI
 
-- **Animação de Fundo "Matrix"**: Um efeito de "chuva digital" inspirado no filme *Matrix* foi criado com a API de Canvas, adicionando um toque cyberpunk e dinâmico ao fundo da página.
-- **Animações de Entrada**: Elementos aparecem com animações sutis de fade-in e slide-in conforme o usuário rola a página.
-- **Elementos Interativos**: Efeitos de hover e foco em botões, links e cards para melhorar a experiência do usuário.
-- **Design "Glassmorphism"**: Uso de transparência e desfoque para criar um efeito de vidro fosco em elementos como o cabeçalho e os cards.
+O projeto adota uma estética **"Modern Matrix"**, combinando o visual cyberpunk clássico com práticas modernas de UX:
+
+- **Paleta de Cores**: Fundo escuro profundo (`#050505`) com acentos em verde neon (`#00ff41`) e verde escuro (`#0d0208`).
+- **Tipografia**: Uso da fonte monoespaçada `JetBrains Mono` para código/títulos e `Inter` para legibilidade em textos longos.
+- **Efeitos Visuais**:
+  - **Matrix Rain**: Animação de fundo com canvas HTML5 customizável.
+  - **Glitch Effect**: Efeitos de distorção digital em textos e hover de cards.
+  - **Scanlines**: Sobreposição sutil para simular monitores CRT antigos.
+  - **Typewriter**: Efeito de digitação automática na seção Hero.
+  - **Glassmorphism**: Elementos de UI com fundos semitransparentes e desfoque.
 
 ## Tecnologias Utilizadas
 
-- **HTML5**: Estrutura semântica e moderna.
-- **CSS3**: Estilização avançada com:
-  - **Variáveis CSS**: Para fácil gerenciamento de temas e cores.
-  - **Flexbox e Grid Layout**: Para criação de layouts complexos e responsivos.
-  - **Animações e Transições**: Para interatividade e feedback visual.
-- **JavaScript (Vanilla)**: Todo o dinamismo do site é construído com JavaScript puro, sem a necessidade de frameworks ou bibliotecas externas.
-  - **DOM Manipulation**: Para criar e atualizar elementos da página dinamicamente.
-  - **Fetch API**: Para carregar dados (embora neste projeto os dados estejam em um objeto JSON local).
-  - **Canvas API**: Para a animação de fundo "Matrix".
-  - **Intersection Observer API**: Para acionar animações de entrada de forma performática.
-- **Font Awesome**: Para ícones vetoriais.
-- **Google Fonts**: Para tipografia personalizada.
+- **HTML5**: Semântica e acessibilidade.
+- **CSS3**:
+  - CSS Variables (Custom Properties) para design tokens.
+  - Flexbox e Grid para layout.
+  - Animações CSS (@keyframes) para efeitos de glitch e cursor.
+- **JavaScript (ES6+)**:
+  - Módulos para organização do código.
+  - Canvas API para o efeito Matrix.
+  - Manipulação eficiente do DOM.
+  - Não utiliza frameworks externos (Vanilla JS).
+- **Google Fonts**: JetBrains Mono e Inter.
+- **Font Awesome**: Ícones vetoriais.
 
 ## Estrutura do Projeto
+
+A estrutura de arquivos foi organizada para facilitar a manutenção e escalabilidade:
 
 ```
 /
 ├── LICENSE
 ├── README.md
-└── index.html
+├── index.html          # Ponto de entrada (estrutura base)
+├── css/
+│   └── style.css       # Design System e estilos globais
+└── js/
+    ├── app.js          # Lógica da aplicação, efeitos e renderização
+    └── data.js         # Repositório de dados (conteúdo do currículo)
 ```
-
-- **`index.html`**: O único arquivo que contém toda a estrutura, estilo e lógica da aplicação.
-  - **CSS**: O CSS está embutido na tag `<style>` dentro do `<head>`.
-  - **JavaScript**: O código JS está embutido na tag `<script>` antes do fechamento do `<body>`.
-  - **Dados**: Todas as informações de texto estão centralizadas em um objeto JSON (`jsonData`) dentro do script.
-- **`README.md`**: Este arquivo.
-- **`LICENSE`**: A licença do projeto.
 
 ## Como Executar
 
-Como este é um projeto front-end puro, você pode simplesmente abrir o arquivo `index.html` em qualquer navegador moderno.
-
-Para uma experiência mais próxima de um ambiente de desenvolvimento, você pode usar um servidor local:
+O projeto não requer build tools ou dependências complexas (npm/yarn), pois utiliza tecnologias nativas.
 
 1.  **Clone o repositório:**
     ```bash
@@ -79,27 +82,34 @@ Para uma experiência mais próxima de um ambiente de desenvolvimento, você pod
     ```bash
     cd jonnathanriquelmo.github.io
     ```
-3.  **Inicie um servidor local.** Se você tiver o Python instalado, pode usar:
-    ```bash
-    python -m http.server
-    ```
-    Ou, se tiver o Node.js, pode usar o pacote `live-server`:
-    ```bash
-    npx live-server
-    ```
-4.  **Abra o navegador** e acesse `http://localhost:8000` (ou a porta indicada pelo servidor).
+3.  **Inicie um servidor local** (recomendado para evitar bloqueios de CORS em alguns navegadores, embora funcione diretamente também):
+    *   Com Python:
+        ```bash
+        python -m http.server
+        ```
+    *   Com Node.js (se tiver `live-server` ou similar):
+        ```bash
+        npx live-server
+        ```
+4.  **Acesse:** `http://localhost:8000`
 
 ## Personalização
 
-Para personalizar o conteúdo do portfólio, basta editar o objeto `jsonData` dentro da tag `<script>` no arquivo `index.html`. Você pode alterar:
+Para atualizar as informações do portfólio, você só precisa editar um arquivo:
 
-- Informações pessoais (nome, título, descrição).
-- Links de redes sociais.
-- Experiência profissional.
-- Formação acadêmica.
-- Habilidades técnicas.
-- Informações de contato.
-- Traduções de texto.
+*   **`js/data.js`**: Este arquivo contém um objeto `resumeData`. Altere os valores dentro dele (Experiência, Educação, Skills, etc.) e o site será atualizado automaticamente. O arquivo suporta campos bilíngues (pt/en).
+
+Exemplo:
+```javascript
+export const resumeData = {
+    profile: {
+        name: "Seu Nome",
+        role: { pt: "Seu Cargo", en: "Your Role" },
+        // ...
+    },
+    // ...
+};
+```
 
 ## Licença
 
@@ -111,7 +121,7 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 # Jonnathan Riquelmo - Portfolio
 
-This is the repository for my personal portfolio, a single-page application (SPA) created to showcase my skills, professional experience, and academic background. The project was developed with a focus on modern design, interactivity, and performance, using only native web technologies (HTML, CSS, and JavaScript).
+This is the repository for my personal portfolio, a single-page application (SPA) completely overhauled to reflect a "Modern Matrix" aesthetic. The project demonstrates my skills in software engineering, system design, and attention to detail, using native web technologies with a clean and organized architecture.
 
 [View the live demo](https://jonnathanriquelmo.github.io/)
 
@@ -120,7 +130,7 @@ This is the repository for my personal portfolio, a single-page application (SPA
 ## Table of Contents
 
 - [Features](#features)
-- [Visual Features](#visual-features)
+- [Design System & UI](#design-system--ui)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [How to Run](#how-to-run)
@@ -131,56 +141,59 @@ This is the repository for my personal portfolio, a single-page application (SPA
 
 ## Features
 
-- **Responsive Design**: Fully adaptable to different screen sizes, from desktops to mobile devices.
-- **Light/Dark Theme**: Allows the user to switch between a light and a dark theme, with the preference saved in `localStorage`.
-- **Multilingual (i18n)**: Support for Portuguese (pt-BR) and English (en), with the language saved in `localStorage`.
-- **Dynamic Content Loading**: All information (experience, education, etc.) is loaded from a single JSON object, making maintenance easy.
-- **Smooth Scrolling**: Smooth scrolling animation when navigating through sections.
-- **Optimized Mobile Menu**: A special navigation menu for mobile devices, with an opaque background and auto-closing on link clicks.
+- **Modern Architecture**: Clear separation of concerns between Structure (HTML), Style (CSS), and Behavior/Data (JS).
+- **Responsive Design**: Fluid layout that adapts perfectly to desktops, tablets, and mobile devices.
+- **Internationalization (i18n)**: Native support for Portuguese (PT) and English (EN) with instant toggling.
+- **Dynamic Rendering**: All content (experience, education, skills) is generated via JavaScript from a centralized data file.
+- **Interactive Mobile Menu**: Optimized navigation for touch screens with fluid animations.
 
-## Visual Features
+## Design System & UI
 
-- **"Matrix" Background Animation**: A "digital rain" effect inspired by the movie *The Matrix* was created with the Canvas API, adding a dynamic and cyberpunk touch to the page background.
-- **Entry Animations**: Elements appear with subtle fade-in and slide-in animations as the user scrolls the page.
-- **Interactive Elements**: Hover and focus effects on buttons, links, and cards to enhance the user experience.
-- **"Glassmorphism" Design**: Use of transparency and blur to create a frosted glass effect on elements like the header and cards.
+The project adopts a **"Modern Matrix"** aesthetic, combining the classic cyberpunk look with modern UX practices:
+
+- **Color Palette**: Deep dark background (`#050505`) with neon green accents (`#00ff41`) and dark green (`#0d0208`).
+- **Typography**: Uses `JetBrains Mono` for code/headings and `Inter` for readability in long texts.
+- **Visual Effects**:
+  - **Matrix Rain**: Background animation with customizable HTML5 canvas.
+  - **Glitch Effect**: Digital distortion effects on text and card hovers.
+  - **Scanlines**: Subtle overlay to simulate old CRT monitors.
+  - **Typewriter**: Automatic typing effect in the Hero section.
+  - **Glassmorphism**: UI elements with semi-transparent backgrounds and blur.
 
 ## Technologies Used
 
-- **HTML5**: Semantic and modern structure.
-- **CSS3**: Advanced styling with:
-  - **CSS Variables**: For easy management of themes and colors.
-  - **Flexbox and Grid Layout**: For creating complex and responsive layouts.
-  - **Animations and Transitions**: For interactivity and visual feedback.
-- **JavaScript (Vanilla)**: All site dynamism is built with pure JavaScript, without the need for external frameworks or libraries.
-  - **DOM Manipulation**: To dynamically create and update page elements.
-  - **Fetch API**: To load data (although in this project, the data is in a local JSON object).
-  - **Canvas API**: For the "Matrix" background animation.
-  - **Intersection Observer API**: To trigger entry animations performantly.
-- **Font Awesome**: For vector icons.
-- **Google Fonts**: For custom typography.
+- **HTML5**: Semantics and accessibility.
+- **CSS3**:
+  - CSS Variables (Custom Properties) for design tokens.
+  - Flexbox and Grid for layouts.
+  - CSS Animations (@keyframes) for glitch and cursor effects.
+- **JavaScript (ES6+)**:
+  - Modules for code organization.
+  - Canvas API for the Matrix effect.
+  - Efficient DOM manipulation.
+  - No external frameworks (Vanilla JS).
+- **Google Fonts**: JetBrains Mono and Inter.
+- **Font Awesome**: Vector icons.
 
 ## Project Structure
+
+The file structure has been organized for maintainability and scalability:
 
 ```
 /
 ├── LICENSE
 ├── README.md
-└── index.html
+├── index.html          # Entry point (base structure)
+├── css/
+│   └── style.css       # Design System and global styles
+└── js/
+    ├── app.js          # Application logic, effects, and rendering
+    └── data.js         # Data repository (resume content)
 ```
-
-- **`index.html`**: The single file containing the entire structure, style, and logic of the application.
-  - **CSS**: The CSS is embedded in the `<style>` tag within the `<head>`.
-  - **JavaScript**: The JS code is embedded in the `<script>` tag before the closing `<body>`.
-  - **Data**: All text information is centralized in a JSON object (`jsonData`) within the script.
-- **`README.md`**: This file.
-- **`LICENSE`**: The project license.
 
 ## How to Run
 
-As this is a pure front-end project, you can simply open the `index.html` file in any modern browser.
-
-For an experience closer to a development environment, you can use a local server:
+The project does not require build tools or complex dependencies (npm/yarn), as it uses native technologies.
 
 1.  **Clone the repository:**
     ```bash
@@ -190,27 +203,34 @@ For an experience closer to a development environment, you can use a local serve
     ```bash
     cd jonnathanriquelmo.github.io
     ```
-3.  **Start a local server.** If you have Python installed, you can use:
-    ```bash
-    python -m http.server
-    ```
-    Or, if you have Node.js, you can use the `live-server` package:
-    ```bash
-    npx live-server
-    ```
-4.  **Open your browser** and go to `http://localhost:8000` (or the port indicated by the server).
+3.  **Start a local server** (recommended to avoid CORS blocks in some browsers, although it may work directly):
+    *   With Python:
+        ```bash
+        python -m http.server
+        ```
+    *   With Node.js (if you have `live-server` or similar):
+        ```bash
+        npx live-server
+        ```
+4.  **Access:** `http://localhost:8000`
 
 ## Customization
 
-To customize the portfolio content, simply edit the `jsonData` object within the `<script>` tag in the `index.html` file. You can change:
+To update the portfolio information, you only need to edit one file:
 
-- Personal information (name, title, description).
-- Social media links.
-- Professional experience.
-- Academic background.
-- Technical skills.
-- Contact information.
-- Text translations.
+*   **`js/data.js`**: This file contains a `resumeData` object. Change the values inside it (Experience, Education, Skills, etc.) and the site will update automatically. The file supports bilingual fields (pt/en).
+
+Example:
+```javascript
+export const resumeData = {
+    profile: {
+        name: "Your Name",
+        role: { pt: "Seu Cargo", en: "Your Role" },
+        // ...
+    },
+    // ...
+};
+```
 
 ## License
 
